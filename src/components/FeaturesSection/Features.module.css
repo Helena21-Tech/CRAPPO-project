@@ -1,0 +1,122 @@
+.features{
+  background-color: #2B076E;
+  height: 180rem;
+  position: relative;
+  padding: 5rem 10rem;
+}
+@media screen and (max-width:1300px) {
+ .features{
+  padding: 5rem 6rem;
+}
+}
+@media screen and (max-width:850px) {
+  .features {
+    height: 285rem;
+  }
+}
+@media screen and (max-width:500px) {
+  .features {
+    height: 250rem;
+    padding: 5rem 2rem;
+  }
+}
+.header{
+  font-weight: 700;
+  font-size: 4rem;
+  width: 60%;
+  margin: 3rem auto;
+  text-align: center;
+  animation: 2s header;
+}
+@keyframes header {
+  0%{
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.circle{
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.circle1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.gridContent{
+  margin: 4rem 0;
+  animation: 2s showContent ease-in;
+}
+@media screen and (max-width:1200px) {
+  .gridContent{
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width:850px) {
+  .gridContent {
+    margin: 4rem 0;
+  }
+}
+@keyframes showContent {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.gridContent h4{
+  margin: 2rem 0;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.gridContent p{
+  color: #e0e0e0;
+  width: 80%;
+}
+.gridImg{
+  width: 100%;
+  animation: 2s showImg;
+}
+.gridImg img{
+  width: inherit;
+}
+@keyframes showImg {
+  0%{
+    transform: scale(0.4);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.btnShow{
+  animation: 5s btnShow;
+}
+@keyframes btnShow {
+  0%{
+    transform: translateY(5rem);
+    opacity: 0.5;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.btnSlide{
+  animation: 5s btnSlide;
+}
+@keyframes btnSlide {
+  0%{
+    transform: translateX(5rem);
+    opacity: 0.5;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

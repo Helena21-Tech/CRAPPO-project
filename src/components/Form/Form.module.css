@@ -1,0 +1,64 @@
+.container{
+  background-color: white;
+  height: 30rem;
+  width: 80%;
+  border-radius: 20px;
+  margin: 3rem auto;
+  text-align: left;
+  animation: 2s moveIn ease-in;
+}
+@media screen and (max-width:1000px) {
+  .container {
+   width: 90%;
+   height: 33rem;
+  }
+}
+@keyframes moveIn {
+  0%{
+    transform: scale(80%);
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+.content{
+  margin: 1rem 3rem;
+}
+.content h4{
+  font-weight: 500;
+  color: #3671e9;
+  text-transform: uppercase;
+}
+.content div{
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #0d0d2b;
+}
+.content span{
+  color: #3671e9;
+}
+.content p{
+  color: #828282;
+  margin-top: 1rem;
+}
+.container form{
+  padding: 2rem;
+}
+.container input{
+  width: 50%;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+.container input::placeholder{
+  font-size: 2rem;
+}
+.container select{
+  margin: 0 3rem;
+  width: 20%;
+  font-size: 2rem;
+  padding:0.5rem;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+}

@@ -1,0 +1,31 @@
+.heading{
+  text-align: center;
+  margin: 15rem 0;
+  animation: 2s moveIn ease-in;
+}
+@keyframes moveIn {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.heading h2{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.heading p{
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #E0E0E0;
+}

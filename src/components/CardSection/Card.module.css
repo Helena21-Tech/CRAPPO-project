@@ -1,0 +1,37 @@
+.card{
+  width: 35rem;
+  height: 40rem;
+  border-radius: 10px;
+  margin-top: 5rem;
+  text-align: center;
+  
+}
+@media screen and (max-width:1100px) {
+  .card{
+    width: 32rem;
+  }
+}
+@media screen and (max-width:1000px) {
+  .card {
+   padding: 0.5rem 0;
+   width: 70%;
+   margin: 3rem auto;
+  }
+}
+@media screen and (max-width:500px) {
+  .card {
+    width: 90%;
+  }
+}
+.inactive{
+  background-color: white;
+}
+.active{
+  background-color: #0d0d2b;
+}
+.active h2{
+  color: white
+}
+.active p{
+  color: white
+}

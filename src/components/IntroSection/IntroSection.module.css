@@ -1,0 +1,28 @@
+.section{
+  background-color: #0D0D2B;
+  height: 215rem;
+  padding: 5rem 10rem;
+  position: relative;
+}
+@media screen and (max-width:1300px) {
+  .section{
+    height: 205rem;
+    padding: 5rem 6rem;
+  }
+}
+@media screen and (max-width:1000px) {
+  .section {
+    height: 340rem;
+  }
+}
+@media screen and (max-width:850px) {
+  .section{
+    height: 320rem;
+  }
+}
+@media screen and (max-width:650px) {
+  .section {
+    padding: 5rem 2rem;
+    height: 300rem;
+  }
+}

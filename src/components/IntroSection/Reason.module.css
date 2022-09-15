@@ -1,0 +1,78 @@
+.why{
+  position: relative;
+}
+
+.content{
+  margin-top: 10rem;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  animation: 2s moveIn ease-in;
+}
+@keyframes moveIn {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.content h2{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.content p{
+  margin-top: 2rem;
+  color: #E0E0E0;
+  font-weight: 400;
+  width: 80%;
+}
+.model{
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+}
+.model1{
+  position: absolute;
+  bottom: 0;
+  right: -10rem;
+}
+.ribbon{
+  position: absolute;
+  left: -10rem;
+  bottom: -10rem;
+}
+.image{
+  width: 85%;
+  animation: 2s show ease-in ;
+}
+.image img{
+  width: inherit;
+}
+@keyframes show {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media screen and (max-width:1000px) {
+  .why {
+    display: block;
+  }
+  .content {
+    position: relative;
+    width: 80%;
+    margin: 10rem auto 4rem;
+  }
+  .image{
+    width: 100%;
+  }
+}

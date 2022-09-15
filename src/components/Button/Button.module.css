@@ -1,0 +1,27 @@
+.button{
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.btnNormal{
+  background-color: #3671e9;
+  color: white;
+}
+.btnNews{
+  background-color: white;
+  color: #0d0d2b;
+}
+.activeBtn{
+  padding: 1.5rem 3rem 1.5rem 2rem;
+}
+.activeBtn p{
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: white;
+  margin: 0;
+  width: 100%;
+}

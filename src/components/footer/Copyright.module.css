@@ -1,0 +1,10 @@
+.copyright{
+  position: absolute;
+  bottom: 0;
+  padding: 0 10rem;
+}
+@media screen and (max-width:1300px) {
+  .copyright {
+    padding: 0 6rem;
+  }
+}

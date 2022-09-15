@@ -1,0 +1,116 @@
+.heroPage{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content{
+  margin-top: 10rem;
+}
+.content h1{
+  margin-top: 2rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.content button{
+  background-color: #3671e9;
+  padding: 2rem 6rem 2rem 3rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  position: relative;
+}
+.heroBtn span{
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.discount{
+  background-color: #252540;
+  border-radius: 20px;
+  padding: 0.7rem 0.5rem;
+  width: 65%;
+  font-weight: 400;
+  animation: 2s saleIn ease-in;
+}
+@keyframes saleIn {
+  0%{
+    transform: translateY(-8rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.discount span{
+  background-color: white;
+  color: #0D0D2B;
+  font-weight: 500;
+  margin-right: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  animation: 5s  spanIn;
+}
+@keyframes spanIn {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0.5;
+  }
+}
+.text{
+  animation: 2s moveIn ease-in;
+}
+@keyframes moveIn {
+    0% {
+      transform: translateY(8rem);
+      opacity: 0.1;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.image{
+  width: 100%;
+  animation: 2s show;
+}
+.image img{
+  width: inherit;
+}
+@keyframes show {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@media screen and (max-width:1300px) {
+  .content h1{
+    font-size: 5rem;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width:1000px) {
+  .heroPage{
+    display: block;
+    text-align: center;
+  }
+  .content {
+   width: 60%;
+   margin: 8rem auto ;
+  }
+  .discount{
+    width: 80%;
+    margin: 0 2rem;
+  }
+}

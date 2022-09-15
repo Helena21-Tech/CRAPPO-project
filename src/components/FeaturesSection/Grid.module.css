@@ -1,0 +1,12 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  margin: 10rem 0;
+}
+@media screen and (max-width:850px) {
+  .grid {
+    display: block;
+    margin-top: 15rem;
+  }
+}
